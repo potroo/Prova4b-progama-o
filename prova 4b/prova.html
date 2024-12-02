@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100px;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            padding: 8px;
+        }
+
+        .header {
+            width: 100%;
+            background-color: rgb(34, 78, 23);
+            display: flex;
+            padding: 10px 5px;
+            align-items: center;
+            justify-content: space-around;
+            position: fixed;
+        }
+
+        .ul {
+            display: flex;
+        }
+
+        .ul li {
+            margin: 0 10px;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        .img {
+            height: 40px;
+        }
+
+        .logo {
+            height: 100%;
+        }
+
+        .foto {
+            width: 100%;
+            height: 300px;
+            background: url("./pes-com-chuteiras-disputando-por-bola-em-campo-de-futebol.jpg") no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            position: relative;
+        }
+
+        .item {
+            width: 100%;
+            border-radius: 10px;
+            background-color: rgb(34, 78, 23);
+            text-align: center;
+
+
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .item h5 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+            color: white
+        }
+
+        .item .preço {
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(46, 43, 49);
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: rgb(34, 78, 23);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+            height: 190px;
+        }
+
+        .footerimg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .footerimg img {
+            height: 50px;
+            width: auto;
+        }
+
+        .footertexto {
+            text-align: center;
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+                width: 100px;
+                height: auto;
+            }
+
+            .item {
+                width: 160px;
+                border-radius: 10px;
+                text-align: center;
+                background-color:  rgb(34, 78, 23);
+
+            }
+
+        }
+
+        .fototexto {
+            font-size: 25px;
+            color: white;
+            margin: 0 30px 30px 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-family: "Jaro", sans-serif;
+        }
+
+        .footericon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+
+        }
+
+        .footericon img {
+            height: 95%;
+            width: auto;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="img">
+            <img class="logo" src="./icons8-bola-de-futebol-2-50 (1).png">
+        </div>
+        <div>
+            <ul class="ul">
+                <li>P.I Chuteiras</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="foto">
+        <p class="fototexto">AS MELHORES<br>
+            CHUTEIRAS</p>
+    </div>
+
+    <div class="container">
+        <div class="item">
+            <img src="./dfef460d-7ac8bf0fcebb8b513417112433340391-1024-1024.jpeg" alt="React Gato">
+            <div class="preço">R$899,00</div>
+            <h5>React Gato</h5>
+        </div>
+
+
+        <div class="item">
+            <img src="./2IA-9046-979_zoom2.webp" alt="Umbro Pro 5">
+            <div class="preço">R$ 649,99</div>
+            <h5>Umbro Pro 5</h5>
+        </div>
+        <div class="item">
+            <img src="./177217-800-auto.webp" alt="Joma Ferrão">
+            <div class="preço">R$ 696,57</div>
+            <h5>Joma Ferrão</h5>
+        </div>
+        <div class="item">
+            <img src="./dfef460d-7ac8bf0fcebb8b513417112433340391-1024-1024.jpeg" alt="React Gato">
+            <div class="preço">R$899,00</div>
+            <h5>React Gato</h5>
+        </div>
+        <div class="item">
+            <img src="./2IA-9046-979_zoom2.webp" alt="Umbro Pro 5">
+            <div class="preço">R$ 649,99</div>
+            <h5>Umbro Pro 5</h5>
+        </div>
+        <div class="item">
+            <img src="./177217-800-auto.webp" alt="Joma Ferrão">
+            <div class="preço">R$ 696,57</div>
+            <h5>Joma Ferrão</h5>
+        </div>
+        <div class="item">
+            <img src="./dfef460d-7ac8bf0fcebb8b513417112433340391-1024-1024.jpeg" alt="React Gato">
+            <div class="preço">R$899,00</div>
+            <h5>React Gato</h5>
+        </div>
+        <div class="item">
+            <img src="./2IA-9046-979_zoom2.webp" alt="Umbro Pro 5">
+            <div class="preço">R$ 649,99</div>
+            <h5>Umbro Pro 5</h5>
+        </div>
+        <div class="item">
+            <img src="./177217-800-auto.webp" alt="Joma Ferrão">
+            <div class="preço">R$ 696,57</div>
+            <h5>Joma Ferrão</h5>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footerimg">
+            <img class="logo2" src="./icons8-bola-de-futebol-2-50 (1).png" alt="Logo">
+            <p>Nos siga nas nossas redes sociais</p>
+        </div>
+        <div class="footericon">
+            <img src="1466166 1.png" alt=""><img src="20673 1.png" alt=""><img
+                src="tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png 1.png" alt=""><img src="8cxn5xrdi 1.png"
+                alt="">
+        </div>
+        <div class="footertexto">
+            <p>Gleba Paiçandu - Lote 80 Zona Rural Ivatuba - PR</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
